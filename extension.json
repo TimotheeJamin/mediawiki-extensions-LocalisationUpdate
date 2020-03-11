@@ -34,12 +34,8 @@
 		"LocalisationUpdate\\ReaderFactory": "includes/reader/ReaderFactory.php"
 	},
 	"Hooks": {
-		"LocalisationCacheRecache": [
-			"LocalisationUpdate::onRecache"
-		],
-		"LocalisationCacheRecacheFallback": [
-			"LocalisationUpdate::onRecacheFallback"
-		]
+		"LocalisationCacheRecache": "LocalisationUpdate::onRecache",
+		"LocalisationCacheRecacheFallback": "LocalisationUpdate::onRecacheFallback"
 	},
 	"config": {
 		"LocalisationUpdateDirectory": false,

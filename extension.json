@@ -21,8 +21,6 @@
 		]
 	},
 	"AutoloadClasses": {
-		"LocalisationUpdate": "includes/LocalisationUpdate.php",
-		"LocalisationUpdate\\Updater": "includes/Updater.php",
 		"LocalisationUpdate\\Fetcher": "includes/fetcher/Fetcher.php",
 		"LocalisationUpdate\\FetcherFactory": "includes/fetcher/FetcherFactory.php",
 		"LocalisationUpdate\\FileSystemFetcher": "includes/fetcher/FileSystemFetcher.php",
@@ -33,9 +31,12 @@
 		"LocalisationUpdate\\Reader": "includes/reader/Reader.php",
 		"LocalisationUpdate\\ReaderFactory": "includes/reader/ReaderFactory.php"
 	},
+	"AutoloadNamespaces": {
+		"LocalisationUpdate\\": "includes/"
+	},
 	"Hooks": {
-		"LocalisationCacheRecache": "LocalisationUpdate::onRecache",
-		"LocalisationCacheRecacheFallback": "LocalisationUpdate::onRecacheFallback"
+		"LocalisationCacheRecache": "LocalisationUpdate\\LocalisationUpdate::onRecache",
+		"LocalisationCacheRecacheFallback": "LocalisationUpdate\\LocalisationUpdate::onRecacheFallback"
 	},
 	"config": {
 		"LocalisationUpdateDirectory": false,

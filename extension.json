@@ -20,17 +20,6 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"LocalisationUpdate\\Fetcher": "includes/fetcher/Fetcher.php",
-		"LocalisationUpdate\\FetcherFactory": "includes/fetcher/FetcherFactory.php",
-		"LocalisationUpdate\\FileSystemFetcher": "includes/fetcher/FileSystemFetcher.php",
-		"LocalisationUpdate\\GitHubFetcher": "includes/fetcher/GitHubFetcher.php",
-		"LocalisationUpdate\\HttpFetcher": "includes/fetcher/HttpFetcher.php",
-		"LocalisationUpdate\\Finder": "includes/finder/Finder.php",
-		"LocalisationUpdate\\JSONReader": "includes/reader/JSONReader.php",
-		"LocalisationUpdate\\Reader": "includes/reader/Reader.php",
-		"LocalisationUpdate\\ReaderFactory": "includes/reader/ReaderFactory.php"
-	},
 	"AutoloadNamespaces": {
 		"LocalisationUpdate\\": "includes/"
 	},

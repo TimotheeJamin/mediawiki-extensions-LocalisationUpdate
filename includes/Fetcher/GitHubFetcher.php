@@ -5,7 +5,7 @@
  * @license GPL-2.0-or-later
  */
 
-namespace LocalisationUpdate;
+namespace LocalisationUpdate\Fetcher;
 
 /**
  * This class uses GitHub api to obtain a list of files present in a directory

@@ -14,6 +14,12 @@ use LocalisationUpdate\Reader\ReaderFactory;
  * Executes the localisation update.
  */
 class Updater {
+
+	/**
+	 * @var Update
+	 */
+	private $logger;
+
 	/**
 	 * Whether the path is a pattern and thus we need to use appropriate
 	 * code for fetching directories.
@@ -126,6 +132,14 @@ class Updater {
 		return array_filter( $files );
 	}
 
+	/**
+	 * @param Finder $finder
+	 * @param ReaderFactory $readerFactory
+	 * @param FetcherFactory $fetcherFactory
+	 * @param array $repos
+	 * @param Update $logger
+	 * @return array
+	 */
 	public function execute(
 		Finder $finder,
 		ReaderFactory $readerFactory,

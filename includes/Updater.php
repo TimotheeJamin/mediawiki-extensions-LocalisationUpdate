@@ -95,13 +95,13 @@ class Updater {
 	 *
 	 * @param array $origin
 	 * @param array $remote
-	 * @param array $blacklist Array of message keys to ignore, keys as as array keys.
+	 * @param array $ignore Array of message keys to ignore, keys as as array keys.
 	 * @return array
 	 */
-	public function findChangedTranslations( $origin, $remote, $blacklist = [] ) {
+	public function findChangedTranslations( $origin, $remote, $ignore = [] ) {
 		$changed = [];
 		foreach ( $remote as $key => $value ) {
-			if ( isset( $blacklist[$key] ) ) {
+			if ( isset( $ignore[$key] ) ) {
 				continue;
 			}
 
